@@ -3,9 +3,9 @@ Console.Write("Программа показывает вторую цифру �
 Console.WriteLine("");
 Console.Write("Введите трехзначное число: ");
 int digit3 = Convert.ToInt32(Console.ReadLine());
-if (digit3 > 99 && digit3 < 1000)
+if (Math.Abs(digit3) > 99 && Math.Abs(digit3) < 1000)
 {
-    Console.WriteLine($"Вторая цифра числа {digit3} это {digit3 / 10 % 10}");
+    Console.WriteLine($"Вторая цифра числа {digit3} это {Math.Abs(digit3) / 10 % 10}");
 }
 else
 {
