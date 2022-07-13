@@ -5,7 +5,7 @@ Console.Write("Введите цифру дня недели: ");
 int digitDay = Convert.ToInt32(Console.ReadLine());
 
 //Первое решение задачи
-if (digitDay >0 && digitDay < 8)
+if (digitDay > 0 && digitDay < 8)
 {
     if (digitDay < 6)
     {
