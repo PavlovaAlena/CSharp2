@@ -2,12 +2,12 @@
 Console.Write("Программа показывает вторую цифру трёхзначного числа");
 Console.WriteLine("");
 Console.Write("Введите трехзначное число: ");
-int d1 = Convert.ToInt32(Console.ReadLine());
-if (d1 > 99 && d1 < 1000)
+int digit3 = Convert.ToInt32(Console.ReadLine());
+if (digit3 > 99 && digit3 < 1000)
 {
-    Console.WriteLine($"Вторая цифра числа {d1} это {d1 / 10 % 10}");
+    Console.WriteLine($"Вторая цифра числа {digit3} это {digit3 / 10 % 10}");
 }
 else
 {
-    Console.WriteLine($"Число {d1} не является 3хзначным");
+    Console.WriteLine($"Число {digit3} не является 3хзначным");
 }
