@@ -1,18 +1,38 @@
-﻿Console.Write("Введите число дня недели: ");
-int dn = Convert.ToInt32(Console.ReadLine());
+﻿//Задача 15. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным
+Console.Write("Программа проверяет цифру на соответствие дня недели выходному дню");
+Console.WriteLine("");
+Console.Write("Введите цифру дня недели: ");
+int digitDay = Convert.ToInt32(Console.ReadLine());
 
-if (dn >0 && dn < 8)
+//Первое решение задачи
+if (digitDay >0 && digitDay < 8)
 {
-    if (dn < 6)
+    if (digitDay < 6)
     {
-        Console.WriteLine($"Числу {dn} соответствует будний день");
+        Console.WriteLine($"Цифре {digitDay} не соответствует выходной день, это будний день");
     }
     else
     {
-        Console.WriteLine($"Числу {dn} соответствует выходной день");
+        Console.WriteLine($"Цифре {digitDay} соответствует выходной день");
     }
 }
 else
 {
-    Console.WriteLine($"Числу {dn} нет соответствия дня недели");
+    Console.WriteLine($"Цифре {digitDay} нет соответствия дня недели");
 }
+
+//Второе решение задачи
+
+/* switch (digitDay)
+{
+    case <= 0:
+    case >= 8:
+        Console.WriteLine($"Цифре {digitDay} нет соответствия дня недели");    
+        break;
+    case < 6:
+        Console.WriteLine($"Цифре {digitDay} не соответствует выходной день, это будний день");
+        break;
+    default:
+        Console.WriteLine($"Цифре {digitDay} соответствует выходной день");
+        break;
+} */
